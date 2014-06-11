@@ -1,0 +1,11 @@
+Description:
+    Creates a new AngularJS UI-Router state
+
+Example:
+    yo angular-ui-router:state thing [--coffee] [--minsafe]
+
+    This will create:
+        app/scripts/controllers/thing.js
+        app/views/thing.html
+    And add state to:
+        app.js
