@@ -11,7 +11,7 @@ angular.module('<%= _.camelize(appname) %>App', [<%= angularModules %>])
             .state('index', {
                 url: '/',
                 templateUrl: 'views/main.html',
-                controller:'MainCtrl'
+                controller: 'MainCtrl'
             });
     });
 <% }else{ %>
