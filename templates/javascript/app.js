@@ -12,7 +12,7 @@ angular.module('<%= _.camelize(appname) %>App', [<%= angularModules %>])
                 url: '/',
                 templateUrl: 'views/main.html',
                 controller:'MainCtrl'
-            })/*needle-point*/;
+            });
     });
 <% }else{ %>
 angular.module('<%= _.camelize(appname) %>App', [<%= angularModules %>])

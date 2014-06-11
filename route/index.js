@@ -18,7 +18,7 @@ Generator.prototype.rewriteAppJs = function () {
     if (this.env.options.coffee) {
         angularUtils.rewriteFile({
             file: path.join(this.env.options.appPath, 'scripts/app.coffee'),
-            needle: '/*needle-point*/',
+            needle: '.state',
             splicable: [
               '.state \'/' + this.name + '\',',
               '  templateUrl: \'views/' + this.name + '.html\',',
@@ -29,7 +29,7 @@ Generator.prototype.rewriteAppJs = function () {
     else {
         angularUtils.rewriteFile({
             file: path.join(this.env.options.appPath, 'scripts/app.js'),
-            needle: '/*needle-point*/',
+            needle: '.state',
             splicable: [
               '.state(\'/' + this.name + '\', {',
               '  templateUrl: \'views/' + this.name + '.html\',',
